@@ -1,0 +1,38 @@
+.container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url(../../assets/BG.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.bg-main {
+    background-color: rgba(0, 0, 0, 0.363);
+}
+
+.bg-nav {
+    background-color: black;
+}
+
+.text-main {
+    color: white;
+    font-weight: bold;
+    font-size: 3.5rem;
+}
+
+.text-sub {
+    color: white;
+    font-size: 1.3rem;
+    font-weight: bold;
+}

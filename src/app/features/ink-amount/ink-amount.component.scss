@@ -1,0 +1,47 @@
+.text-right {
+  text-align: right;
+}
+
+/* number-input.component.css */
+/* Hide the increment/decrement arrows */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.container2 {
+  display: flex;
+  margin-top: 5px;
+  border-radius: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.column {
+  width: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.column:nth-child(odd) {
+  // background-color: #f0f0f0;
+}
+
+.column:nth-child(even) {
+  // background-color: #f0f0f0;
+
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .column {
+    width: 100%;
+  }
+}

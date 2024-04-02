@@ -1,0 +1,38 @@
+.body {
+    // background: url(../../assets/02_copia.jpg) fill;
+    background-color: #db00db;
+}
+
+.re-btn2 {
+    background-color: #934ba1;
+    border-radius: 5px;
+    border: 0;
+    width: 150px;
+}
+
+
+.re-btn2:hover {
+  background-color: #a662b4;
+  border-radius: 5px;
+}
+.re-btn2:active {
+  background-color: #a662b4;
+  border-radius: 5px;
+}
+.re-btn2::before {
+  background-color: #a662b4;
+  border-radius: 5px;
+}
+.re-btn2::after {
+  background-color: #a662b4;
+  border-radius: 5px;
+}
+
+.re-btn2:active,
+.re-btn2:focus,
+.re-btn2.active {
+/* Add your custom styles here */
+/* For example, changing the background color */
+background-color: #a662b4 !important; /* Your desired color */
+/* You can add more styles as needed */
+}

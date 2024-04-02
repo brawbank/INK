@@ -1,0 +1,76 @@
+<div class="container2 d-flex align-items-center justify-content-center">
+    <div class="row" style="height: 100%; width: 100%;">
+        <div class="col-md-4 bg" style="justify-content: center; display: flex; align-items: center; color: #FFF;">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>ติดต่อผู้ดูแล</h1>
+                </div>
+                <div class="col-md-12" style="display: flex; justify-content: flex-start; flex-direction: column;">
+                    <span>Line : zarpan</span>
+                    <span>เบอร์โทรศัพท์ : 0626176006</span>
+                    <span>E-mail : pawichaye290845@gmail.com</span>
+                    <span>ID Line : seisui05</span>
+                    <span>เบอร์โทรศัพท์ : 0854234039</span>
+                    <span>E-mail :Misakisaika.03@gmail.com</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8 bg-main"
+            style=" justify-content: center; align-items: center; color: #FFF; padding-top: 15%; font-weight: bold; padding-right: 5%; padding-left: 5%;">
+            <div class="content row" [formGroup]="contactForm">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="firstName">First Name</label>
+                        <input type="text" class="form-control" id="firstName" formControlName="firstName"
+                            placeholder="Enter First Name">
+                        <div *ngIf="contactForm.get('firstName')?.hasError('required') && contactForm.get('firstName')?.touched"
+                            class="text-danger">
+                            First name is required.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" class="form-control" id="lastName" formControlName="lastName"
+                            placeholder="Enter Last Name">
+                        <div *ngIf="contactForm.get('lastName')?.hasError('required') && contactForm.get('lastName')?.touched"
+                            class="text-danger">
+                            Last name is required.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" formControlName="email"
+                            placeholder="Enter Email">
+                        <div *ngIf="contactForm.get('email')?.hasError('required') && contactForm.get('email')?.touched"
+                            class="text-danger">
+                            Email is required.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" id="message" formControlName="message" rows="3"></textarea>
+                        <div *ngIf="contactForm.get('message')?.hasError('required') && contactForm.get('message')?.touched"
+                            class="text-danger">
+                            Message is required.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <button (click)="onSubmit()" class="btn my-btn" style="font-weight: bold;">SEND</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div style="position: absolute; bottom: 20px; right: 20px;">
+    <button (click)="goBack()" type="submit" class="btn btn-primary re-btn2">กลับ <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="white" d="M16.62 2.99a1.25 1.25 0 0 0-1.77 0L6.54 11.3a.996.996 0 0 0 0 1.41l8.31 8.31c.49.49 1.28.49 1.77 0s.49-1.28 0-1.77L9.38 12l7.25-7.25c.48-.48.48-1.28-.01-1.76"/></svg></button>
+</div>

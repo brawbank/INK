@@ -1,0 +1,10 @@
+{
+    "appId": "com.example.my-electron-app",
+    "productName": "INK",
+    "directories": {
+        "output": "dist"
+    },
+    "win": {
+        "target": "nsis"
+    }
+}
